@@ -13,7 +13,7 @@ async function run() {
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ 
       model: "gemini-2.5-flash", // Використовуємо 2.5 Flash, бо він розумніший
-      systemInstruction: "Ти AskMi - розумний CLI диспетчер. Ти допомагаєш Максу керувати AIOS (LiteDev/PowerDev) та розробляти код. Якщо користувач просить виконати дію (бекап, очищення), ти маєш пропонувати відповідні bash команди або скрипти з папки ~/WS/AskMi/scripts/."
+      systemInstruction: "Ти AskMe - розумний CLI диспетчер. Ти допомагаєш Максу керувати AIOS (LiteDev/PowerDev) та розробляти код. Якщо користувач просить виконати дію (бекап, очищення), ти маєш пропонувати відповідні bash команди або скрипти з папки ~/WS/AskMe/scripts/."
   });
 
   let prompt = process.argv.slice(2).join(" ");
@@ -29,14 +29,14 @@ async function run() {
   if (prompt.startsWith("cmd: ")) {
       const commandAction = prompt.replace("cmd: ", "").trim();
       // Тут в майбутньому буде логіка виклику твоїх скриптів з папки scripts/
-      console.log(`\n🤖 AskMi: Зрозумів команду на дію: "${commandAction}". (Функція виклику скриптів в розробці)`);
+      console.log(`\n🤖 AskMe: Зрозумів команду на дію: "${commandAction}". (Функція виклику скриптів в розробці)`);
       prompt = `Користувач хоче виконати системну дію: ${commandAction}. Напиши bash скрипт або команду, яка це зробить безпечно.`;
   }
 
   try {
     process.stdout.write("🤖 Аналізую...");
     const result = await model.generateContent(prompt);
-    console.log("\r" + " ".repeat(20) + "\r🤖 AskMi: \n" + result.response.text());
+    console.log("\r" + " ".repeat(20) + "\r🤖 AskMe: \n" + result.response.text());
   } catch (e) {
     console.error("\n❌ Помилка:", e.message);
   }
