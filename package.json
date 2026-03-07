@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.3.1"
+  },
+  "name": "askmi",
+  "version": "1.0.0",
+  "description": "AskMi — це легкий CLI-агент на базі Gemini 2.0 Flash, створений для швидкої роботи в терміналах Linux. У майбутньому планується як \"Тімлід-оркестратор\" для керування іншими вузькоспеціалізованими AI-агентами (напр., через Docker).",
+  "main": "index.js",
+  "bin": {
+    "askmi": "bin/ask.js"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
