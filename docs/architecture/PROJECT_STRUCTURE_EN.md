@@ -8,17 +8,10 @@ At the current stage, the project is a simple CLI tool with its core logic in ex
 
 ```bash
 AskMe/
-├── architecture/
-│   ├── EN_PROJECT_STRUCTURE.md
-│   └── UA_PROJECT_STRUCTURE.md
 ├── bin/
 │   ├── ask.js              # < Main script for AI queries
 │   └── list-models.js      # < Utility to list available models
 ├── docs/
-│   ├── en/
-│   ├── ua/
-│   ├── VISION_EN.md
-│   └── VISION_UA.md
 ├── scripts/
 │   ├── hello-system.sh
 │   └── status.sh
@@ -36,8 +29,6 @@ The main idea is to extract the core logic (interaction with the AI) into a sepa
 
 ```bash
 AskMe/
-├── architecture/
-│   └── ... (architecture documentation)
 ├── docs/
 │   └── ... (project documentation)
 ├── public/                 # < Static files for the web interface (GUI)

@@ -14,11 +14,7 @@ It turns your terminal into a smart assistant that can analyze logs, structure p
 - Bilingual support (English + Ukrainian)
 
 ## 📖 Documentation
-- Full specification: [English](/docs/en/SPEC_FREE_EN_v1.5.0.md) | [Ukrainian](/docs/ua/SPEC_FREE_UA_v1.5.0.md)
-- Vision & Strategy: [VISION.md](/VISION.md)
-- User Guide: [/guide/](/guide/)
-- Installation: [/install/](/install/)
-- Project Architecture: [/architecture/](/architecture/)
+ `/docs`
 
 ## 🛠 Quick Start
 See the `/install` folder for detailed instructions.

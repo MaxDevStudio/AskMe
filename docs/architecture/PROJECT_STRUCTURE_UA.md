@@ -8,17 +8,10 @@
 
 ```bash
 AskMe/
-├── architecture/
-│   ├── EN_PROJECT_STRUCTURE.md
-│   └── UA_PROJECT_STRUCTURE.md
 ├── bin/
 │   ├── ask.js              # < Головний скрипт для запитів до AI
 │   └── list-models.js      # < Утиліта для перегляду доступних моделей
 ├── docs/
-│   ├── en/
-│   ├── ua/
-│   ├── VISION_EN.md
-│   └── VISION_UA.md
 ├── scripts/
 │   ├── hello-system.sh
 │   └── status.sh
@@ -36,8 +29,6 @@ AskMe/
 
 ```bash
 AskMe/
-├── architecture/
-│   └── ... (документація архітектури)
 ├── docs/
 │   └── ... (документація проєкту)
 ├── public/                 # < Статичні файли для веб-інтерфейсу (GUI)
