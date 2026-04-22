@@ -1,22 +1,34 @@
-# 🤖 AskMi (Ask Me) AI Agent
+# 🤖 AskMe — Intelligent CLI Conductor
 
-AskMi — це легкий CLI-агент на базі Gemini 2.0 Flash, створений для швидкої роботи в терміналах Linux. У майбутньому планується як "Тімлід-оркестратор" для керування іншими вузькоспеціалізованими AI-агентами (напр., через Docker).
+**Repository:** https://github.com/MaxDevStudio/AskMe
 
-## 🚀 Можливості
-- **Миттєвий доступ:** Виклик ШІ прямо з терміналу глобальною командою `ask`.
-- **Підтримка Pipe (`|`):** Можливість "згодовувати" агенту логи, структуру проекту (`tree`) або вміст файлів (`cat`) на льоту.
-- **Модульність:** Скрипт `list-models.js` для перевірки доступних моделей API.
+**AskMe Free** is a lightweight open-source AI orchestrator for Linux.  
+It turns your terminal into a smart assistant that can analyze logs, structure projects, run commands, and help in emergency situations.
 
-## 🛠 Встановлення
-1. Клонувати репозиторій.
-2. Виконати `npm install` для встановлення залежностей.
-3. Створити файл `.env` та додати `GEMINI_API_KEY=твій_ключ`.
-4. Додати аліас у `.bashrc`: `alias ask='node /шлях/до/AskMi/ask.js'`.
+## 🚀 Key Features
+- Global `ask` command anywhere in the system
+- Pipe support: `cat log.txt | ask`, `tree | ask`, `ls -R | ask`
+- Smart Pager (`less`) — long answers are automatically scrollable
+- Emergency GRUB Mode — boot directly into TTY with AskMe ready
+- JSON output (`--json`) for external tools and GUIs
+- Bilingual support (English + Ukrainian)
 
-## 💻 Використання
-- Простий запит: `ask "Як відцентрувати div?"`
-- Аналіз логів: `cat error.log | ask "Знайди причину помилки"`
-- Аналіз архітектури: `tree -L 2 | ask "Чи логічна ця структура?"`
+## 📖 Documentation
+- Full specification: [English](/docs/en/SPEC_FREE_EN_v1.5.0.md) | [Ukrainian](/docs/ua/SPEC_FREE_UA_v1.5.0.md)
+- Vision & Strategy: [VISION.md](/VISION.md)
+- User Guide: [/guide/](/guide/)
+- Installation: [/install/](/install/)
+- Project Architecture: [/architecture/](/architecture/)
 
-## 🏷 Версія
-Поточна версія: **1.0.0-alpha**
+## 🛠 Quick Start
+See the `/install` folder for detailed instructions.
+
+## 👥 Team
+- **MaxDev** — Visionary Owner & Lead Developer  
+- **Gemini** — Senior Architect  
+- **Grok** — Strategic Lead & Creative Director
+
+---
+
+**License:** MIT  
+**Status:** Active Development (v1.5.0)
